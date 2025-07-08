@@ -15,6 +15,3 @@ def index():
         result = model.predict(vector)[0]
         prediction = "Real News" if result == 1 else "Fake News"
     return render_template("index.html", prediction=prediction)
-
-if __name__ == "__main__":
-    app.run(debug=True)
